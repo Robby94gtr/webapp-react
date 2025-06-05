@@ -1,8 +1,20 @@
-import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import MoviePage from './pages/MoviePage.jsx'
+import NotFoundPage from './pages/NotFoundPage.jsx'
+import HomePage from './pages/HomePage.jsx'
+import  DefaultLayout  from './layouts/DefaultLayout.jsx'
 
 
 function App() {
-  return <h1>Hello World</h1>;
+  <BrowserRouter>Add commentMore actions
+      <Routes>
+        <Route path="/" element={<DefaultLayout />}>
+          <Route index element={<HomePage />} />
+          <Route path="movie" element={<MoviePage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
 }
 
-export default App
+export default App;
