@@ -11,9 +11,6 @@ function Headers({ headers }) {
         <div>
           <Link to="/">Home</Link>
         </div>
-        <div>
-          <Link to="/movie">MoviePage</Link>
-        </div>
       </div>
     </div>
   );
