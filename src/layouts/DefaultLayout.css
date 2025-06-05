@@ -1,14 +1,14 @@
-header{
+header {
     background-color: #282c34;
     padding: 20px;
     color: white;
 }
 
-.vh{
+.vh {
     height: 100vh;
 }
 
-.vw{
+.vw {
     width: 100vw;
 }
 
@@ -33,4 +33,9 @@ footer {
 .hcard {
     height: 250px;
     overflow: auto;
+}
+
+.w-40 {
+    width: 200px;
+    height: 270px;
 }

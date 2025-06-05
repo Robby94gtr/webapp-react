@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import MovieCard from '../components/MovieCard';
+import DetailMovie from '../components/DetailMovie';
 import axios from "axios";
 
 function MoviePage() {
@@ -35,7 +35,7 @@ function MoviePage() {
 
   return (
     <div className="flex flex-col items-center bg-gray-100">
-      <MovieCard
+      <DetailMovie
         title={film.title}
         genre={film.genre}
         image={film.image}
