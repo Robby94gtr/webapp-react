@@ -6,7 +6,7 @@ import  DefaultLayout  from './layouts/DefaultLayout.jsx'
 
 
 function App() {
-  <BrowserRouter>Add commentMore actions
+  <BrowserRouter>
       <Routes>
         <Route path="/" element={<DefaultLayout />}>
           <Route index element={<HomePage />} />
